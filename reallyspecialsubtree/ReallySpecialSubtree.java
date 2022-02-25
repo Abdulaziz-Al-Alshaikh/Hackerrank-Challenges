@@ -73,7 +73,7 @@ public class ReallySpecialSubtree {
             visited.add(nodeList.get(0));
             nodeList.get(0).isVis = true;
             int sum = 0, selectedEdges = 0;
-            //I need to select the min edge (u, v) such that v doesn't belong to the set 'visited'.
+            //I need to select the min edge (u, v) such that u belongs to the set 'visited' and v doesn't (to avoid a cycle).
             int size = nodeList.size();
             while(selectedEdges < size - 1) {
                 int minEdge = Integer.MAX_VALUE;
