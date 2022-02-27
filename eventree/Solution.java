@@ -37,8 +37,8 @@ public class Solution {
         
 
         private int getResult() {
-            //first of all, i need to iterate over all nodes in the list.
-            //second of all, for each node of this list, i need to perform on it a BFS. 
+            //firstly, i need to iterate over all nodes in the list.
+            //for each node of this list, i need to perform on it a BFS. 
             //If the BFS resulted on a number of nodes that is even, then we can remove that edge otherwise not.
             int result = 0;
             for(Node node : this.nodeList) {
